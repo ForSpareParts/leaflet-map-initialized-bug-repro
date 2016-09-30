@@ -10,11 +10,7 @@ export default LeafletMap.extend(TrackZoomAndBoundsMixin, {
     console.log('map setup here');
 
     Ember.run(() => {
-      this.set('bounds',
-        [[0, 0],
-        [0, 20],
-        [20, 20],
-        [20, 0]]);
+      this.set('value', 42);
     });
   }
 });
